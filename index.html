@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>botstrablern</title>
+  <link rel="stylesheet" href="../botstrablern/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href=".//style.css">
+</head>
+
+<body>
+  <script src="../botstrablern/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="
+         padding: 0px;">
+    <div class="container-fluid" margin: 5px;">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+          viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M32 64c0-17.7 14.3-32 32-32H576c17.7 0 32 14.3 32 32s-14.3 32-32 32H536v64h-8c-61.9 0-112 50.1-112 112v24.6c-9.9 5.8-18.2 14.1-23.8 24.1c-17.6-20-43.4-32.7-72.2-32.7c-53 0-96 43-96 96v64c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V384c0-53-43-96-96-96V160h72V96H64C46.3 96 32 81.7 32 64zM408 96v64h80V96H408zm-48 64V96H280v64h80zM152 96v64h80V96H152zM528 240c-17.7 0-32 14.3-32 32v48h64V272c0-17.7-14.3-32-32-32zm-80 32c0-44.2 35.8-80 80-80s80 35.8 80 80v48c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V352c0-17.7 14.3-32 32-32V272z" />
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+          viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z" />
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active p-lg-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a style="" class="nav-link dropdown-toggle p-lg-3" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="sersh ps-3 pe-3">
+          <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M256 0C116.1 0 2 112.7 0 252.1C-2 393.6 112.9 510.8 254.5 511.6c43.7 .3 85.9-10.4 123.3-30.7c3.6-2 4.2-7 1.1-9.7l-24-21.2c-4.9-4.3-11.8-5.5-17.8-3c-26.1 11.1-54.5 16.8-83.7 16.4C139 461.9 46.5 366.8 48.3 252.4C50.1 139.5 142.6 48.2 256 48.2H463.7V417.2L345.9 312.5c-3.8-3.4-9.7-2.7-12.7 1.3c-18.9 25-49.7 40.6-83.9 38.2c-47.5-3.3-85.9-41.5-89.5-88.9c-4.2-56.6 40.6-103.9 96.3-103.9c50.4 0 91.9 38.8 96.2 88c.4 4.4 2.4 8.5 5.7 11.4l30.7 27.2c3.5 3.1 9 1.2 9.9-3.4c2.2-11.8 3-24.2 2.1-36.8c-4.9-72-63.3-130-135.4-134.4c-82.7-5.1-151.8 59.5-154 140.6c-2.1 78.9 62.6 147 141.6 148.7c33 .7 63.6-9.6 88.3-27.6L495 509.4c6.6 5.8 17 1.2 17-7.7V9.7c0-5.4-4.4-9.7-9.7-9.7H256z" />
+          </svg>
+        </div>
+        <a class="btn btn-primary rounded-pill  main-btn" href="#">login</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="landing d-flex justify-content-center align-items-center">
+    <div class="text-center ">
+      <h1>test the creativity</h1>
+      <p class="fs-6 text-white-50 mb-4">we make awesome grahic and web design</p>
+      <a class="btn  rounded-pill  main-btn" href="#">Get Started</a>
+    </div>
+  </div>
+
+  <div class="features text-center pt-5 pb-5">
+    <div class="container">
+      <div class="main-title mt-5 mb-5">
+        <svg class="mb-4" xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 448 512">
+          <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z" />
+        </svg>
+        <h2 class="wegod">We are Good at</h2>
+        <p class="wesom">some of these stuff Under</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="feat">
+            <div class="icon-holder position-relative ">
+              <svg class="fa-solid fa-1 position-absolute bottom-0 number" xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 256 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.8 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H160V64z" />
+              </svg>
+              <svg class="fa-solid fa-pencil position-absolute bottom-0 icon" xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+              </svg>
+
+            </div>
+
+            <h4 class="mb-3 mt-3 text-uppercase">grahic Disign</h4>
+            <p class="text-black-50  lh-lg">Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Impedit, numquam?</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feat">
+            <div class="icon-holder position-relative ">
+              <svg class="fa-solid fa-2 position-absolute bottom-0 number" xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M142.9 96c-21.5 0-42.2 8.5-57.4 23.8L54.6 150.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L40.2 74.5C67.5 47.3 104.4 32 142.9 32C223 32 288 97 288 177.1c0 38.5-15.3 75.4-42.5 102.6L109.3 416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L200.2 234.5c15.2-15.2 23.8-35.9 23.8-57.4c0-44.8-36.3-81.1-81.1-81.1z" />
+              </svg>
+              <svg class="fa-solid fa-pencil position-absolute bottom-0 icon" xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M64 64V352H576V64H64zM0 64C0 28.7 28.7 0 64 0H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM128 448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H128c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+              </svg>
+            </div>
+
+            <h4 class="mb-3 mt-3 text-uppercase">grahic Disign</h4>
+            <p class="text-black-50  lh-lg">Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Impedit, numquam?</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feat">
+            <div class="icon-holder position-relative ">
+              <svg class="fa-solid fa-3 position-absolute bottom-0 number" xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M0 64C0 46.3 14.3 32 32 32H272c13.2 0 25 8.1 29.8 20.4s1.5 26.3-8.2 35.2L162.3 208H184c75.1 0 136 60.9 136 136s-60.9 136-136 136H105.4C63 480 24.2 456 5.3 418.1l-1.9-3.8c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l1.9 3.8c8.1 16.3 24.8 26.5 42.9 26.5H184c39.8 0 72-32.2 72-72s-32.2-72-72-72H80c-13.2 0-25-8.1-29.8-20.4s-1.5-26.3 8.2-35.2L189.7 96H32C14.3 96 0 81.7 0 64z" />
+              </svg>
+              <svg class="fa-solid fa-pencil position-absolute bottom-0 icon" xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M96 0C78.3 0 64 14.3 64 32v96h64V32c0-17.7-14.3-32-32-32zM288 0c-17.7 0-32 14.3-32 32v96h64V32c0-17.7-14.3-32-32-32zM32 160c-17.7 0-32 14.3-32 32s14.3 32 32 32v32c0 77.4 55 142 128 156.8V480c0 17.7 14.3 32 32 32s32-14.3 32-32V412.8C297 398 352 333.4 352 256V224c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z" />
+              </svg>
+            </div>
+
+            <h4 class="mb-3 mt-3 text-uppercase">grahic Disign</h4>
+            <p class="text-black-50  lh-lg">Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Impedit, numquam?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="our-work text-center pb-5 pt-5">
+    <div class="container">
+      <div class="main-title mt-5 mb-5 text-center">
+        <svg class="mb-4" xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 448 512">
+          <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z" />
+        </svg>
+        <h2 class="wegod ">We make this</h2>
+        <p class="wesom">some of these stuff Under</p>
+        <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
+          <li class="active rounded-pill" data-target="all">All</li>
+          <li data-target="design">Design</li>
+          <li>Code</li>
+          <li>Photo</li>
+          <li>App</li>
+        </ul>
+
+        ds;cks,dc;
+
+
+
+        <div class="row ">
+
+          <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+            <div class="card" data-work="Application">
+              <div class="button">
+                <a href="#" class="btn btn-primary ">Go somewhere</a>
+              </div>
+              <div style=" background-image: url(img/3659.jpg_wh860.jpg );" class="card-img-top img_bg" alt="..."></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+                  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnquickbuild on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+            <div class="card" data-work="Application">
+              <div class="button">
+                <a href="#" class="btn btn-primary ">Go somewhere</a>
+              </div>
+              <div style=" background-image: url(img/3659.jpg_wh860.jpg );" class="card-img-top img_bg" alt="..."></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+                  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnquickbuild on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+            <div class="card" data-work="Application">
+              <div class="button">
+                <a href="#" class="btn btn-primary ">Go somewhere</a>
+              </div>
+              <div style=" background-image: url(img/3659.jpg_wh860.jpg );" class="card-img-top img_bg" alt="..."></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+                  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnquickbuild on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+            <div class="card" data-work="Application">
+              <div class="button">
+                <a href="#" class="btn btn-primary ">Go somewhere</a>
+              </div>
+              <div style=" background-image: url(img/3659.jpg_wh860.jpg );" class="card-img-top img_bg" alt="..."></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+                  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnquickbuild on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="stuff pt-5">
+    <div class="container">
+      <div class="main-title text-center mt-5 mb-5">
+        <svg class="mb-4" xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 448 512">
+          <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z" />
+        </svg>
+        <h2 class="wegod">some stuff about us</h2>
+        <p class="wesom">the great team</p>
+      </div>
+     <p class="description text-center mb-5 text-black-50 m-auto">
+      Lorem ipsum dolor sit 
+      amet consectetur adipisicing elit. Saepe, aliquam? Lorem ipsum d 
+      olor sit amet consectetur adipisicing elit. Nulla eaque corrupti 
+        in cum similique minus suscipit architecto provident dolore aspernatur.
+     </p>
+
+     <div class="row align-items-center">
+      <div class="col-lg-4 mb-4 text-center text-md-start" style="color: black;">
+        <div class="text">
+          <h4 class="text-center" style="color:black">Retina Design</h4>
+          <p class="text-center" style="color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam exercit
+            ationem officia at dolorum omnis
+          </p>
+          <p class="text-center" style="color:black"> voluptatem p rovident expedita qui hic non asperiores fuga explicabo velit repellendus s
+            it modi eos veniam necessitatibus, quaerat sint dolor! Atque tenetur modi nam a.
+          </p>
+          <div class="button text-center" >
+            <a class="btn  rounded-pill  main-btn" href="#">Order me on</a>
+          </div>
+        </div>
+  
+       </div>
+     
+
+
+     <div class="col-lg-8">
+      <div class="imges">
+        <img class="img-fluid" src="img/تنزيل (3).jpg" alt="" style="width: 750px; height: 500px;">
+      </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+
+<div class="team text-center pb-5 pt-5">
+  <div class="container">
+    <h2 style="color:  #ffc400;" class="fw-bold">Meet The Team</h2>
+    <p class="text-black-50 mb-5">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio so 
+      luta eligendi eum voluptates possimus quidem assumenda labore amet ip
+      sa o dio, facere impedit ducimus necessitatibus reprehenderit est,
+       molestiae accusantium mollitia dolore.
+    </p>
+    <div class="row">
+
+      <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+        <div class="card">
+          <div style=" background-image: url(img/OIP\ \(1\).jpg );" class="card-img-top img_bg" alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title" style="background-color: #33d1cc;">luke skywalker</h5>
+            <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+              nnn nnnnnn nnnnn nnnnnn nnnnnnn nnnnnn nnnnnn nnnnnnnquickbuild on the card title and make up the bulk of the
+              card's contlo Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! ent.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+        <div class="card">
+          <div style=" background-image: url(img/OIP\ \(1\).jpg );" class="card-img-top img_bg" alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title" style="background-color: #33d1cc;">luke skywalker</h5>
+            <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+              nnn nnnnnn nnnnn nnnnnn nnnnnnn nnnnnn nnnnnn nnnnnnnquickbuild on the card title and make up the bulk of the
+              card's contlo Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! ent.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+        <div class="card">
+          <div style=" background-image: url(img/OIP\ \(1\).jpg );" class="card-img-top img_bg" alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title" style="background-color: #33d1cc;">luke skywalker</h5>
+            <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+              nnn nnnnnn nnnnn nnnnnn nnnnnnn nnnnnn nnnnnn nnnnnnnquickbuild on the card title and make up the bulk of the
+              card's contlo Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! ent.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-3 col-md-4 col-sm-12" >
+        <div class="card">
+          <div style=" background-image: url(img/OIP\ \(1\).jpg );" class="card-img-top img_bg" alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title" style="background-color: #33d1cc;">luke skywalker</h5>
+            <p style="height: 120px ; overflow: hidden;" class="card-text">Some
+              nnn nnnnnn nnnnn nnnnnn nnnnnnn nnnnnn nnnnnn nnnnnnnquickbuild on the card title and make up the bulk of the
+              card's contlo Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus! ent.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // document.querySelector('ul li').addEventListener('click', function() {
+  //   var id = this.getAttribute('data-target');
+  //   var categories = document.querySelectorAll('.categories');
+  //      console.log(categories);
+  //   for (var i = 0; i < categories.length; i++) {
+  //     categories[i].style.display = "none";
+  //     console.log(categories[i]);
+  //   }
+    
+  //   document.getElementById(id).style.display = "block";
+  //   console.log(id);
+  // });
+</script>
+
+</body>
+
+</html>
+
+

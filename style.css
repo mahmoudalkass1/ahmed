@@ -1,0 +1,203 @@
+:root {
+    --dark-color: #19283f  ;
+    --green-color: #33d1cc;
+    --red-color : #ff3150;
+    --yallow-color : #ffc400; 
+    --section-color : #eff7fa;
+    /* #19283f  */
+}
+
+body{
+    height: 1000px;
+}
+
+.main-btn {
+    background-color: var(--yallow-color) ;
+    color : var(--red-color)!important ;
+    border-color: var(--yallow-color) !important;
+}
+.main-btn:hover{
+    color: var(--yallow-color) !important;
+}
+.nav-link{
+    color: var(--red-color) !important;
+
+}
+/* .nav-link.active , .nav-link.focus,.nav-link.hover{
+  color : #33d1cc
+} */
+
+
+.container-fluid{
+    background-color:var(--dark-color);
+}
+
+.navbar-brand svg path{
+    fill: white;
+}
+.navbar-brand svg path:hover {
+    fill: var(--yallow-color) /* تحديد لون الأيقونة */
+}
+
+/* .nav-link.active,
+.nav-link.focus,
+.nav-link :hover{
+    color : #33d1cc
+} */
+/* .nav-link:hover{
+    color : #33d1cc
+} */
+.nav-item a:hover{
+    color : var(--yallow-color) !important;
+}
+.sersh svg path{
+    fill : #ffffff;
+}
+.sersh svg path:hover{
+    fill : var(--yallow-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler svg path {
+    fill:var(--red-color);
+} 
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+
+}
+/* .navbar .navbar-toggler[aria-expanded="true"]{
+    color: #33d1cc !important;        ?????????????????????????????????????
+} */
+
+.landing {
+    background-color: var(--dark-color);
+    /* background-image: url(./img/th.jpg); */
+
+    background-size: cover;
+    min-height: calc(100vh - 56px);
+
+}
+.text-center{
+    color: #ffffff;
+    
+}
+
+
+.wegod{
+    color: #000;
+}
+.wesom{
+    color: #000;
+}
+
+.wesom::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    display: block;
+    margin: auto;
+    margin-top:20px
+    /* position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.main-title svg path{
+    fill : var(--yallow-color) !important
+}
+.text-uppercase{
+    color: var(--yallow-color);
+    
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder{
+    left: 43%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    fill: var(--section-color);
+}
+.features .icon-holder .icon {
+    fill: var(--green-color);
+    font-size: 4rem;
+}
+
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yallow-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--red-color);
+}
+.our-work ul li:not(.active):hover{
+    color: var(--yallow-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.img_bg{
+    height: 288px ;
+    height: 200px;
+    background-size: cover;
+    margin: 10px 0px;
+}
+ .our-work .card .button a{
+     display: none;
+ }
+ /* .our-work .card .button  {
+
+} */
+
+ .our-work .card:hover .button a{
+    position: absolute;
+    background-color: #000000c5; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: center;
+    transition: 0.3s; */
+    font-size: 1.5rem;
+     transform: translateX(calc(100%-5px));
+     left: 0;
+     top: 0;
+    
+ }
+
+ .our-work .card:hover::content{
+    transform: translateX(0);
+ }
+
+ .stuff .description{
+    max-width: 500px;
+ }
+  
+ .team{
+    background-color: var(--section-color);
+ }
+
+ .team h2 {
+    color: var(--yallow-color);
+
+ }
+.teme .box h4 {
+    background-color: var(--green-color);
+}
+
